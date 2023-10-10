@@ -1,4 +1,4 @@
-const ORIGIN = "http://103.140.90.118:8000";
+const ORIGIN = ""; //http://103.140.90.118:8000
 
 let isLoading = false;
 

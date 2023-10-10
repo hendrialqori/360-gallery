@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View image</title>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #panorama {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="images__header" style="margin-bottom: 20px;">
+        <button class="back-icon-wrapper" onclick="history.back()">
+          <i class="fa fa-angle-right" aria-hidden="true" style="color: black;"></i>
+        </button>
+        <p class="images__title" role="heading">360 Gallery</p>
+        <button class="gear-icon-wrapper">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+        </button>
+      </header>
+      <div id="panorama"></div>
+      <button class="refresh-btn" onclick="window.location.reload()">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+      </button>
+      <script src="/static/js/view.js"></script>
+    </main>
+  </body>
+</html>

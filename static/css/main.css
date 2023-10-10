@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  background: #000;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding-block: 20px;
+  position: relative;
+}
+
+.images__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+.back-icon-wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:22px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  border: none;
+}
+
+.gear-icon-wrapper {
+  background-color: white;
+  height:22px;
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 100%;
+}
+
+.refresh-btn {
+  border: none; 
+  height: 30px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}
+
+
+.images__title {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+.images__body {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.image__wrapper {
+  width: 32.6%;
+  height: 32.6;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.image__wrapper img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 320px) {
+  .image__wrapper {
+    width: 103px;
+    height: 103px;
+    overflow: hidden;
+  }
+} 

@@ -70,7 +70,8 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4px;
+  /* gap: 4px; */
+  gap: 1.8px;
 }
 
 .image__wrapper {

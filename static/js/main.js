@@ -15,7 +15,7 @@ const renderImages = (data) => {
   <a href="view.html?image_id=${data.id}">
     <div class="image__wrapper">
     <img
-      src="${ORIGIN}${data.file_path}"
+      src="${ORIGIN}${data.thumbnail_path}"
       loading="lazy"
     />
   </a>

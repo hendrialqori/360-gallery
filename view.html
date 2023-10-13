@@ -6,23 +6,19 @@
     <title>View image</title>
 
     <!-- https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css -->
-    <link
-    rel="stylesheet"
-    href="static/plugins/pannellum.css"
-    />
+    <link rel="stylesheet" href="static/plugins/pannellum.css" />
 
     <!-- https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js -->
-    <script
-    type="text/javascript"
-    src="static/plugins/pannellum.js"
-    ></script>
+    <script type="text/javascript" src="static/plugins/pannellum.js"></script>
 
     <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css -->
     <link
-    rel="stylesheet"
-    href="static/plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      href="static/plugins/font-awesome-4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="static/css/header.css" />
     <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/setting.css" />
     <style>
       #panorama {
         width: 100%;
@@ -32,7 +28,7 @@
   </head>
   <body>
     <main class="container">
-      <header class="images__header" style="margin-bottom: 20px">
+      <header class="header" style="margin-bottom: 20px">
         <button class="back-icon-wrapper" onclick="history.back()">
           <i
             class="fa fa-angle-left"
@@ -40,16 +36,31 @@
             style="color: black"
           ></i>
         </button>
-        <p class="images__title" role="heading">360 Gallery</p>
+        <p class="header__title" role="heading">360 Gallery</p>
         <button class="gear-icon-wrapper">
           <i class="fa fa-cog" aria-hidden="true"></i>
         </button>
       </header>
+      <div class="setting">
+        <div class="setting__one setting__item">
+          <p>Online Mode</p>
+          <div class="checkbox-wrapper-64">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <a href="hotspot-setting.html" class="setting__two setting__item">
+          <p>Hotspot</p>
+        </a>
+      </div>
       <div id="panorama"></div>
       <button class="refresh-btn" onclick="window.location.reload()">
         <i class="fa fa-refresh" aria-hidden="true"></i>
       </button>
       <script src="static/js/view.js"></script>
+      <script src="static/js/setting.js"></script>
     </main>
   </body>
 </html>

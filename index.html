@@ -5,24 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery 360</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/main.css" />s
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/setting.css">
 </head>
   </head>
   <body>
     <main class="container">
-      <header class="images__header">
+      <header class="header">
         <button 
           class="back-icon-wrapper" 
           style="visibility: hidden;"
           >
           <i class="fa fa-angle-right" aria-hidden="true" style="color: black;"></i>
         </button>
-        <p class="images__title" role="heading">360 Gallery</p>
+        <p class="header__title" role="heading">360 Gallery</p>
         <button class="gear-icon-wrapper">
           <i class="fa fa-cog" aria-hidden="true"></i>
         </button>
       </header>
-      <div class="images__body">
+      <div class="images__body"></div> 
+      <div class="setting">
+        <div class="setting__one setting__item">
+          <p>Online Mode</p>
+          <div class="checkbox-wrapper-64">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <a 
+          href="hotspot-setting.html"
+          class="setting__two setting__item"
+          >
+          <p>Hotspot</p>
+        </a>
+      </div>
+      <button class="refresh-btn" onclick="window.location.reload()">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+      </button>
+    </main>
+    <script src="static/js/main.js" defer></script>
+    <script src="static/js/setting.js"></script>
+  </body>
+</html>
+
+
+
         <!-- <div class="image__wrapper">
           <img
             src="http://103.140.90.118:8000/uploads/2023-10-09/R0020025.JPG"
@@ -36,29 +66,5 @@
        <div class="image__wrapper">
           <img
             src="http://103.140.90.118:8000/uploads/2023-10-09/R0020025.JPG"
-          />
-        </div> -->
-      </div>
-      <button class="refresh-btn" onclick="window.location.reload()">
-        <i class="fa fa-refresh" aria-hidden="true"></i>
-      </button>
-    </main>
-    <script src="static/js/main.js" defer></script>
-  </body>
-</html>
-
-<!-- <div class="image__wrapper">
-          <img
-            src="https://media.istockphoto.com/id/1207801277/photo/360-degree-vr-of-large-modern-office-interior.webp?b=1&s=170667a&w=0&k=20&c=7DHXbbxiWGpEFZCjtMVeJgEa0VN0aZHVO0a_WfqypG4="
-          />
-        </div>
-        <div class="image__wrapper">
-          <img
-            src="https://media.istockphoto.com/id/1207801277/photo/360-degree-vr-of-large-modern-office-interior.webp?b=1&s=170667a&w=0&k=20&c=7DHXbbxiWGpEFZCjtMVeJgEa0VN0aZHVO0a_WfqypG4="
-          />
-        </div>
-        <div class="image__wrapper">
-          <img
-            src="https://media.istockphoto.com/id/1207801277/photo/360-degree-vr-of-large-modern-office-interior.webp?b=1&s=170667a&w=0&k=20&c=7DHXbbxiWGpEFZCjtMVeJgEa0VN0aZHVO0a_WfqypG4="
           />
         </div> -->

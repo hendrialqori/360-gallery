@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+.back-icon-wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:22px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  border: none;
+}
+
+.gear-icon-wrapper {
+  background-color: white;
+  height:22px;
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 100%;
+}
+
+.refresh-btn {
+  border: none; 
+  height: 30px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}
+
+
+.header__title {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}

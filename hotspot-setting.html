@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotspot setting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/header.css" />
+    <link rel="stylesheet" href="static/css/setting.css">
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/hotspot-setting.css">
+  </head>
+  <body>
+    <main class="container">
+      <header class="header" style="margin-bottom: 20px">
+        <button class="back-icon-wrapper" onclick="history.back()">
+          <i
+            class="fa fa-angle-left"
+            aria-hidden="true"
+            style="color: black"
+          ></i>
+        </button>
+        <p class="header__title" role="heading">Hotspot setting</p>
+        <button class="gear-icon-wrapper">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+        </button>
+      </header>
+      <div class="setting">
+        <div class="setting__one setting__item">
+          <p>Online Mode</p>
+          <div class="checkbox-wrapper-64">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <a 
+          href="hotspot-setting.html"
+          class="setting__two setting__item"
+          >
+          <p>Hotspot</p>
+        </a>
+      </div>
+      <div class="hotspot-setting">
+        <div class="hotspot-setting__one">
+            <p>Connection</p>
+            <div class="checkbox-wrapper-64">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+        </div>
+        <div class="hotspot-setting__two">
+          <label for="ssid">SSID</label>
+          <input type="text" id="ssid">
+        </div>
+        <div class="hotspot-setting__three">
+          <label for="password">Password</label>
+          <input type="password" id="password">
+        </div>
+        <div class="hotspot-setting__save">
+          <button>Simpan perubahan</button>
+        </div>
+        </div>
+      </div>
+    </main>
+    <script src="/static/js/setting.js"></script>
+  </body>
+</html>

@@ -1,13 +1,21 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"); */
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../plugins/roboto-v30-latin-300.woff2') format('woff2');
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   font-display: swap;
   font-family: 'Roboto';
-  src: url('../plugins/roboto-v30-latin-300.woff2') format('woff2');
+}
+
+a {
+  all: unset;
 }
 
 html,
@@ -21,49 +29,6 @@ body {
   margin: auto;
   padding-block: 20px;
   position: relative;
-}
-
-.images__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 10px;
-}
-
-.back-icon-wrapper {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:22px;
-  aspect-ratio: 1 / 1;
-  border-radius: 100%;
-  border: none;
-}
-
-.gear-icon-wrapper {
-  background-color: white;
-  height:22px;
-  aspect-ratio: 1 / 1;
-  border: none;
-  border-radius: 100%;
-}
-
-.refresh-btn {
-  border: none; 
-  height: 30px;
-  aspect-ratio: 1 / 1;
-  border-radius: 100%;
-  position: fixed;
-  bottom: 20px;
-  right: 15px;
-}
-
-
-.images__title {
-  color: white;
-  font-weight: 300;
-  text-align: center;
 }
 
 .images__body {
@@ -90,8 +55,6 @@ body {
   object-fit: cover;
   cursor: pointer;
 }
-
-
 
 @media (max-width: 320px) {
   .image__wrapper {

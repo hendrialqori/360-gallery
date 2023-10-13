@@ -7,10 +7,6 @@ let existingImages = [];
 const images_container = document.querySelector(".images__body");
 
 const renderImages = (data) => {
-
-  const a = document.createElement('a')
-
-
   let image = `
   <a href="view.html?image_id=${data.id}">
     <div class="image__wrapper">
@@ -53,7 +49,6 @@ const useGetImages = async () => {
     throw new Error(error);
   }
 };
-
 // setInterval(useGetImages,5000)
-
 useGetImages();
+
